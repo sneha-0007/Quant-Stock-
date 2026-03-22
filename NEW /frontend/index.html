@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quant Stock — Trade Predictor</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">Q</div>
+        <div class="title">Quant Stock</div>
+      </div>
+      <div class="controls">
+        <label class="select-label">Choose Bank</label>
+        <select id="bankSelect" class="select">
+
+          <option value="RELIANCE.NS">Reliance Industries</option>
+          <option value="TCS.NS">TCS</option>
+          <option value="INFY.NS">Infosys</option>
+          <option value="HDFCBANK.NS">HDFC Bank</option>
+          <option value="ICICIBANK.NS">ICICI Bank</option>
+          <option value="SBIN.NS">State Bank of India</option>
+          <option value="AXISBANK.NS">Axis Bank</option>
+          <option value="KOTAKBANK.NS">Kotak Mahindra Bank</option>
+          <option value="LT.NS">Larsen & Toubro</option>
+          <option value="HCLTECH.NS">HCL Technologies</option>
+
+          <option value="ITC.NS">ITC</option>
+          <option value="WIPRO.NS">Wipro</option>
+          <option value="MARUTI.NS">Maruti Suzuki</option>
+          <option value="BAJFINANCE.NS">Bajaj Finance</option>
+          <option value="BAJAJFINSV.NS">Bajaj Finserv</option>
+          <option value="ADANIENT.NS">Adani Enterprises</option>
+          <option value="ADANIPORTS.NS">Adani Ports</option>
+          <option value="ONGC.NS">ONGC</option>
+          <option value="COALINDIA.NS">Coal India</option>
+          <option value="NTPC.NS">NTPC</option>
+
+          <option value="POWERGRID.NS">Power Grid</option>
+          <option value="ULTRACEMCO.NS">UltraTech Cement</option>
+          <option value="JSWSTEEL.NS">JSW Steel</option>
+          <option value="TATASTEEL.NS">Tata Steel</option>
+          <option value="HINDALCO.NS">Hindalco</option>
+          <option value="GRASIM.NS">Grasim</option>
+          <option value="ASIANPAINT.NS">Asian Paints</option>
+          <option value="PIDILITIND.NS">Pidilite Industries</option>
+          <option value="NESTLEIND.NS">Nestle India</option>
+          <option value="BRITANNIA.NS">Britannia</option>
+
+          <option value="TITAN.NS">Titan</option>
+          <option value="SUNPHARMA.NS">Sun Pharma</option>
+          <option value="DRREDDY.NS">Dr Reddy's</option>
+          <option value="CIPLA.NS">Cipla</option>
+          <option value="DIVISLAB.NS">Divis Labs</option>
+          <option value="APOLLOHOSP.NS">Apollo Hospitals</option>
+          <option value="TECHM.NS">Tech Mahindra</option>
+          <option value="LTIM.NS">LTIMindtree</option>
+          <option value="MPHASIS.NS">Mphasis</option>
+          <option value="PERSISTENT.NS">Persistent Systems</option>
+
+          <option value="DLF.NS">DLF</option>
+          <option value="GODREJPROP.NS">Godrej Properties</option>
+          <option value="TATAPOWER.NS">Tata Motors</option>
+          <option value="EICHERMOT.NS">Eicher Motors</option>
+          <option value="HEROMOTOCO.NS">Hero MotoCorp</option>
+          <option value="M&M.NS">Mahindra & Mahindra</option>
+          <option value="BHARTIARTL.NS">Bharti Airtel</option>
+          <option value="INDUSINDBK.NS">IndusInd Bank</option>
+          <option value="HDFCLIFE.NS">HDFC Life</option>
+          <option value="SBILIFE.NS">SBI Life</option>
+
+        </select>
+        <select id="chartType" class="select">
+          <option value="candle">Candlestick</option>
+          <option value="line">Line</option>
+        </select>
+
+        <select id="indicator" class="select">
+          <option value="none">No Indicator</option>
+          <option value="sma">Moving Average (SMA)</option>
+          <option value="ema">EMA 9</option>
+          <option value="rsi">RSI</option>
+          <option value="macd">MACD</option>
+          <option value="bb">Bollinger Bands</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="left">
+        <div class="stock-header">
+          <div>
+            <div class="ticker">Bank</div>
+            <div id="stockName" class="stock-name">HDFC BANK</div>
+          </div>
+          <div class="price-box">
+            <div id="stockPrice" class="price">₹1,234.56</div>
+            <div id="stockChange" class="change positive">+0.00%</div>
+          </div>
+        </div>
+        <div class="timeframe-controls">
+          <button class="time-btn active" data-range="6">6H</button>
+          <button class="time-btn" data-range="24">1D</button>
+          <button class="time-btn" data-range="48">2D</button>
+          <button class="time-btn" data-range="120">5D</button>
+        </div>
+        <div class="chart-wrap">
+          <div id="priceChart" style="height:420px;"></div>
+        </div>
+      </div>
+
+      <aside class="right">
+        <div class="card">
+          <h4>Prediction vs Actual</h4>
+          <div class="legend">
+            <div class="leg"><span class="dot pred"></span> Prediction</div>
+            <div class="leg"><span class="dot actual"></span> Actual</div>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="label">Predicted Price</div>
+              <div id="predPrice" class="value">₹1,250.00</div>
+            </div>
+            <div class="stat">
+              <div class="label">Actual Price</div>
+              <div id="actPrice" class="value">₹1,234.56</div>
+            </div>
+            <div class="stat">
+              <div class="label">Confidence</div>
+              <div id="confidence" class="value">72%</div>
+            </div>
+            <div class="stat">
+              <div class="label">Accuracy</div>
+              <div id="accuracy" class="value">—</div>
+            </div>
+          </div>
+
+          <div class="info">
+            <p class="muted">Values update when you switch banks or timeframes. Green percent = profit, red = loss.</p>
+          </div>
+        </div>
+
+        <div class="card small">
+          <h5>Trade Signal</h5>
+
+          <div>Signal: <b id="direction">—</b></div>
+          <div>Entry: <b id="entry">—</b></div>
+          <div>Stop Loss: <b id="stoploss">—</b></div>
+          <div>Target: <b id="target">—</b></div>
+          <h5>Quick Actions</h5>
+          <button id="simulate" class="action">Simulate update</button>
+          <button id="refresh" class="action outline">Refresh data</button>
+        </div>
+
+      </aside>
+    </section>
+
+    <footer class="footer muted">© 2025 — QuantStock</footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
