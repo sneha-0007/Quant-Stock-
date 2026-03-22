@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "quantagent-stock-prediction",
+  "private_key_id": "0d9a48b2f4af77e39c9ce32de7ec8251e5d21db9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDDJs6cQEL8bd9D\nRuQJdNBzwbjxoLLyfOhG0+grtl8eZf2ZdnpjONu9yanR9D5/J0RfzYF/zh2mEEEF\nwoCBAlCF/8GLpZnydj4vMbov8JkYnV89yr+FMkg+sBn2Aj8VhOHFjXPxdYpZKABd\nPvKMoZCLHXVOqgvOJOKWP2Ku3GV6uS2i03CA7davoScgi8B7/Qc3t1A46aEPw1Q2\nDikAW65ppueVd+1YpTfRU2dkGF5uegAj9kmUm8Q/KVdSla41z3bPLE1bxKqvhzzG\nvOb2KzlrXlWWN71NhnmA1vVIfuVmH7chDLYN9vpVcl/xgRemIIz3/ZZmkv4kimaa\nrndwHb55AgMBAAECggEAMFThILONo4T2oWviODFVGwYkbrtU9ldXE4uR2ZmeLyIl\nT6eXIhHH4lYal+P8wnMQLQXxh5ydnS4zXGDSgKD5Hma8IYDPAsykE/4l1Y+p6v22\nw8/95NgSKmxk0Ze21faGD+47g9aPgAs3I+DeI1Q0Py/5iJT2vYRHFdz27MWq4Fyj\nglfu4UOimqEGxR2LqYd79I0hLXp86uNnWWQhcW3XmScAv7WVWHIKa/CWcX6y0rkX\nc1WXuevgot4e8NzYn87X8u+4HM9ybX8Vgeqb3u/myRUOZve8Gf+7zk02CxM9tC9+\nCfKJ+6GwsBW5mT1esjkEYqy2lmMq9RI5Wdo2InqF8QKBgQDrgse81h1MhYLmQeyV\n96hwxBLIi4doeREA5c9GcJ+o0NrRxhWkNmadTsaDWred/M6D5nx6pF+kxMjns5HV\nL3QFoO1HzIR0n6+8yElFqKL32gm7WbXcGFly4d5XAwFEVIdNW1f71YmAFdfNe5Tv\nIUcT30TO8NWsd5aYZJ7BG9S21QKBgQDUISiX14FRTR9qDH+T4/CRZ28AzIH25CIp\nuaTvL60+KAgZrcihlZTJEe+ikIdHRlAtQvbBZc7H2enMxcVZq0fXSz2qHoiB8XjZ\ntOtgbD6WkJd4Ju2+y/ox4kFm4/NPSF6SmYzbLosn67BPsnT/6WcBAuAojXL6k8bl\nKJ1Q5w1DFQKBgQDXjHTfAmECflfWApRUlbzWqL5ASmP+XIARgEP7Rmz6h10fDdsU\n1q2IYGcUJd1UfeNNmZBodzUKiwkN964LnkjkNeu2ARth2h1v/SgC11uA2VB65pqp\n/KcxnERxAtEQBwVm6alXVpNoZZWD/g3L53s0Vu6VMJuAJFvy0nTybVR8mQKBgQCE\n+iBTR1IWoC0QMrOLBvnYfKmWK51RIuPTmj+tfQqyCzBAwLMjr/wsK6U4GDflU0uR\nhAfhZqvAlnc82cGEG54WdWE7kpZqNvBWMVbYBCMcCZoaRPUGhSHbQYVUNZNh4PEA\nH2ewQrYTGWlWHH3BqxPaC25vnXQ1ZovpPZOYkq66nQKBgB3QBoDB2qoS0aHIGPOF\n64zL8eSUWhNgR5de+u/+OEx8nrKKsLP+Wj162tfKn5bvUwBcLI7nuOwLAcwxodu1\nM9vmXOQEX/TgozXBrwsy8qZ8s9z8jt6QlXLq+QO2GKmo4JbeEAbfhfKp/XHew/t/\njCwIT4JMfS/css2gSmrqGdTI\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@quantagent-stock-prediction.iam.gserviceaccount.com",
+  "client_id": "112992669326548509283",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40quantagent-stock-prediction.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
